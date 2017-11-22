@@ -122,7 +122,7 @@ class PPXTextView: UITextView, UITextViewDelegate {
         }
         
         
-        //没有候选字符,拼音输入中 等
+        //没有候选字符,拼音输入中
         if self.markedTextRange == nil {
             
             let text = textView.text as NSString
