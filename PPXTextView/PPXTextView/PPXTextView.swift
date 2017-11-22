@@ -99,6 +99,11 @@ class PPXTextView: UITextView, UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         
         
+        if (text == "") {
+            return true
+        }
+        
+        
         let jointStr = (textView.text as NSString).replacingCharacters(in: range, with: text)
         
         let remainNumber = maxNumber - jointStr.length()
